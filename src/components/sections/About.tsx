@@ -28,7 +28,7 @@ export default function About() {
             Our Story
           </h3>
           <p className="text-xs md:text-base leading-relaxed mb-4 text-center" style={{ color: theme.colors.text }}>
-            We're bringing the vibrant flavors of West African rice dishes to the heart of Houston. 
+            We&apos;re bringing the vibrant flavors of West African rice dishes to the heart of Houston. 
             Born from a passion to share our heritage through food, our restaurant celebrates the 
             rich traditions of Nigerian cuisine while adding contemporary twists that reflect our Houston home.
           </p>
@@ -63,7 +63,7 @@ export default function About() {
             Our commitment to inclusivity and tradition starts with our 100% halal kitchen. 
             Our chefs blend time-honored cooking techniques with modern culinary innovation, 
             ensuring all dishes meet halal standards while preserving authentic flavors. 
-            Every dish is crafted with respect for tradition while embracing Houston's dynamic 
+            Every dish is crafted with respect for tradition while embracing Houston&apos;s dynamic 
             food culture. We carefully select our spices and ingredients from both local Houston 
             vendors and specialized African suppliers to ensure the most authentic flavors.
           </p>
@@ -78,9 +78,9 @@ export default function About() {
             Our Community
           </h3>
           <p className="text-xs md:text-base leading-relaxed mb-4 text-center" style={{ color: theme.colors.text }}>
-            Located in 3rd Ward, we're more than just a restaurant – we're a gathering place 
-            where Houston's diverse community comes together to experience the warmth of African 
-            hospitality. Whether you're familiar with West African cuisine or trying it for the 
+            Located in 3rd Ward, we&apos;re more than just a restaurant – we&apos;re a gathering place 
+            where Houston&apos;s diverse community comes together to experience the warmth of African 
+            hospitality. Whether you&apos;re familiar with West African cuisine or trying it for the 
             first time, our team is here to guide you through a memorable dining experience.
           </p>
         </div>

@@ -45,18 +45,24 @@ export default function Reviews() {
   const theme = themes[selectedRice] || themes.jollof;
   
   const currentQuotes = riceQuotes[selectedRice] || riceQuotes.jollof;
-  
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentQuoteIndex((prevIndex) => (prevIndex + 1) % 3);
-    }, 5000);
-    
-    return () => clearInterval(interval);
-  }, []);
-  
-  useEffect(() => {
+
+  const [prevRice, setPrevRice] = useState(selectedRice);
+
+  if (prevRice !== selectedRice) {
+    setPrevRice(selectedRice);
     setCurrentQuoteIndex(0);
-  }, [selectedRice]);
+  }
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrentQuoteIndex((prevIndex) => (prevIndex + 1) % 3);
+  //   }, 5000);
+    
+  //   return () => clearInterval(interval);
+  // }, []);
+  
+  // useEffect(() => {
+  //   setCurrentQuoteIndex(0);
+  // }, [selectedRice]);
 
 
   // Instagram posts
@@ -131,9 +137,9 @@ export default function Reviews() {
                   transform: 'translateY(-40px)'
                 }}
               >
-                <span style={{ color: theme.colors.quotes }}>"</span>
+                <span style={{ color: theme.colors.quotes }}>&ldquo;</span>
                 {currentQuotes[0]}
-                <span style={{ color: theme.colors.quotes }}>"</span>
+                <span style={{ color: theme.colors.quotes }}>&rdquo;</span>
               </h1>
             )}
             
@@ -146,9 +152,9 @@ export default function Reviews() {
                   transform: 'translateY(40px)'
                 }}
               >
-                <span style={{ color: theme.colors.quotes }}>"</span>
+                <span style={{ color: theme.colors.quotes }}>&ldquo;</span>
                 {currentQuotes[1]}
-                <span style={{ color: theme.colors.quotes }}>"</span>
+                <span style={{ color: theme.colors.quotes }}>&rdquo;</span>
               </h1>
             )}
             
@@ -161,9 +167,9 @@ export default function Reviews() {
                   transform: 'translateY(60px)'
                 }}
               >
-                <span style={{ color: theme.colors.quotes }}>"</span>
+                <span style={{ color: theme.colors.quotes }}>&ldquo;</span>
                 {currentQuotes[2]}
-                <span style={{ color: theme.colors.quotes }}>"</span>
+                <span style={{ color: theme.colors.quotes }}>&rdquo;</span>
               </h1>
             )}
           </div>
