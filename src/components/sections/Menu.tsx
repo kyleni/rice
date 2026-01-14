@@ -3,7 +3,7 @@
 
 'use client';
 
-import { useState, useRef } from 'react';
+import { useRef } from 'react';
 import { useRiceStore } from '@/store/rice-store';
 import { themes } from '@/lib/themes';
 import { RiceType } from '@/lib/constants';

@@ -4,7 +4,7 @@
 
 import React, { useEffect } from 'react';
 import { useRiceStore } from '@/store/rice-store';
-import { themes } from '@/lib/themes';
+// import { themes } from '@/lib/themes';
 
 export default function ThemeProvider({ 
   children 
@@ -14,9 +14,9 @@ export default function ThemeProvider({
   const selectedRice = useRiceStore((state) => state.selectedRice);
   
   useEffect(() => {
-    const theme = themes[selectedRice];
+    // const theme = themes[selectedRice];
     
-    const root = document.documentElement;
+    // const root = document.documentElement;
     
     // root.style.setProperty('--color-primary', theme.colors.primary);
     // root.style.setProperty('--color-social', theme.colors.social);

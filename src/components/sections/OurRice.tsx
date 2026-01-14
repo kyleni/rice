@@ -208,12 +208,12 @@ function getImageFilename(riceType: RiceType, activeIngredients: Set<string>, fr
     // Check for "All" option (all ingredients)
     if (activeIngredients.size === 5) return 'jeweledAll.png';
     
-    let hasAlmonds = activeIngredients.has('almonds');
-    let hasOranges = activeIngredients.has('oranges');
-    let hasPistachios = activeIngredients.has('pistachios');
-    let hasRaisins = activeIngredients.has('raisins');
-    let hasZereshk = activeIngredients.has('zereshk');
-    
+    const hasAlmonds = activeIngredients.has('almonds');
+    const hasOranges = activeIngredients.has('oranges');
+    const hasPistachios = activeIngredients.has('pistachios');
+    const hasRaisins = activeIngredients.has('raisins');
+    const hasZereshk = activeIngredients.has('zereshk');
+
     //  almonds and ornges
     if (!hasRaisins && hasAlmonds && hasOranges && !hasPistachios && !hasZereshk) return 'jewelAlmondOranges.png';
     // only almonds
