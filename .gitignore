@@ -23,6 +23,7 @@
 # misc
 .DS_Store
 *.pem
+Thumbs.db
 
 # debug
 npm-debug.log*
@@ -32,6 +33,7 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+.env*.local
 
 # vercel
 .vercel
@@ -39,3 +41,31 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# videos
+*.mp4
+*.webm
+public/videos/*
+!public/videos/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+
+# Test coverage
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Backup files
+src/components/navigation/SideNav-orig.tsx
+src/components/navigation/SideNav-backup.tsx
+src/app/page-orig.tsx
+src/components/sections/Reviews-orig.tsx
+src/hooks/*-orig.ts
+src/components/sections/*-orig.tsx
+# src/lib/themes-orig.ts
+src/lib/*-orig.ts
+src/store/rice-store-orig.ts
